@@ -1,0 +1,15 @@
+CREATE TABLE coffee (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    roast_level TEXT NOT NULL,
+    ground_or_beans TEXT NOT NULL,
+    taste_description TEXT,
+    price REAL NOT NULL,
+    package_volume REAL NOT NULL
+);
+
+INSERT INTO coffee (name, roast_level, ground_or_beans, taste_description, price, package_volume)
+VALUES
+    ('Arabica', 'Medium', 'Beans', 'Fruity and sweet', 10.99, 250),
+    ('Robusta', 'Dark', 'Ground', 'Strong and bitter', 8.99, 200),
+    ('Espresso', 'Dark', 'Beans', 'Rich and intense', 12.99, 500);
